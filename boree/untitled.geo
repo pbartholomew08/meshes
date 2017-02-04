@@ -13,6 +13,7 @@
  *     CHANGES: [04-FEB-2017] Defined zero plane.
  *              [04-FEB-2017] 2D meshing of zero plane.
  *              [04-FEB-2017] 3D meshing.
+ *              [04-FEB-2017] Defining volumes and boundaries.
  */
 
 //
@@ -204,3 +205,16 @@ Extrude {0, 0, L_outlet} {
   Layers{n_outlet};
   Recombine;
 }
+
+//
+// Define volumes
+//
+Physical Volume(539) = {10, 15, 13, 14, 22, 18, 19, 20, 21, 17, 12, 16, 2, 11, 1, 4, 3, 6, 8, 7, 9, 5};
+
+//
+// Define boundaries
+//
+Physical Surface(540) = {186, 230, 208, 164, 252}; // Inlet
+Physical Surface(541) = {76, 142, 98, 120}; // Annulus inlet
+Physical Surface(542) = {318, 296, 428, 406, 384, 362, 340, 274, 516, 472, 494, 538, 450}; // Outlet
+Physical Surface(543) = {44, 46, 40, 42, 119, 97, 141, 71, 133, 63, 89, 111, 331, 309, 287, 261, 163, 173, 229, 251}; // Walls
