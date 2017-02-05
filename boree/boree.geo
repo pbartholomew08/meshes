@@ -43,11 +43,11 @@ n_bluff = 32;   // The number of radial cells covering the bluff body
 n_annulus = 37; // The number of radial cells covering the annulus
 
 prog_nozzle = 1.1;  // The linear progression for the radial lines of the nozzle
-bump_bluff = 1.0;   // The bump for the radial lines of the bluff body
-bump_annulus = 1.0; // The bump value for the radial lines of the annulus
+bump_bluff = 0.5;   // The bump for the radial lines of the bluff body
+bump_annulus = 0.5; // The bump value for the radial lines of the annulus
 
 n_inlet = 100;  // The number of cells in the inlet
-n_outlet = 500; // The number of cells in the outlet
+n_outlet = 250; // The number of cells in the outlet
 
 //
 // Draw the zero plane
