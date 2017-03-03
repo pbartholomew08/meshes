@@ -37,17 +37,17 @@ h_ogrid = Sqrt(0.5 * (r_ogrid * r_ogrid));
 // Mesh parameters
 //
 
-n_theta = 10;   // The number of azimuthal cells per quarter circumference
-n_nozzle = 10;  // The number of radial cells between the O-grid and the nozzle (should probably be approximately equal to n_theta)
-n_bluff = 32;   // The number of radial cells covering the bluff body
-n_annulus = 37; // The number of radial cells covering the annulus
+n_theta = 16;   // The number of azimuthal cells per quarter circumference
+n_nozzle = 5;  // The number of radial cells between the O-grid and the nozzle (should probably be approximately equal to n_theta)
+n_bluff = 15;   // The number of radial cells covering the bluff body
+n_annulus = 19; // The number of radial cells covering the annulus
 
 prog_nozzle = 1.1;  // The linear progression for the radial lines of the nozzle
-bump_bluff = 0.5;   // The bump for the radial lines of the bluff body
-bump_annulus = 0.5; // The bump value for the radial lines of the annulus
+bump_bluff = 1.0;   // The bump for the radial lines of the bluff body
+bump_annulus = 1.0; // The bump value for the radial lines of the annulus
 
-n_inlet = 100;  // The number of cells in the inlet
-n_outlet = 250; // The number of cells in the outlet
+n_inlet = 40;  // The number of cells in the inlet
+n_outlet = 100; // The number of cells in the outlet
 
 //
 // Draw the zero plane
